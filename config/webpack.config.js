@@ -40,7 +40,7 @@ const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 const lessRegex = /\.less$/;
-const lessModuleRegex = /\.module\.less/;
+const lessModuleRegex = /\.module\.less$/;
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
@@ -82,6 +82,10 @@ module.exports = function(webpackEnv) {
         loader: require.resolve('css-loader'),
         options: cssOptions,
       },
+      //添加对less的支持
+      {
+         loader: require.resolve('less-loader')
+      },
       {
         // Options for PostCSS as we reference these options twice
         // Adds vendor prefixing based on your specified browser support in
@@ -100,7 +104,7 @@ module.exports = function(webpackEnv) {
               stage: 3,
             }),
           ],
-          sourceMap: isEnvProduction && shouldUseSourceMap,
+          sourceMap: isEnvProduction && shouldUseSourceMap
         },
       },
     ].filter(Boolean);
@@ -352,7 +356,7 @@ module.exports = function(webpackEnv) {
                     },
                   ],
                   //新增antd主题配置
-                  [ 'import', { libraryName: 'antd', libraryDirectory: 'es', style: true } ],
+                  ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
@@ -458,10 +462,15 @@ module.exports = function(webpackEnv) {
             {
               test: lessRegex,
               exclude: lessModuleRegex,
+              // options: {
+              //   loader: "less-loader",
+              //   JavaScriptEnabled: true
+              // },
               use: getStyleLoaders(
                 {
                   importLoaders: 2,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
+                  JavaScriptEnabled: true
                 },
                 'less-loader'
               ),
@@ -475,12 +484,17 @@ module.exports = function(webpackEnv) {
             // using the extension .module.less 
             {
               test: lessModuleRegex,
+              // options: {
+              //   loader: "less-loader",
+              //   JavaScriptEnabled: true
+              // },
               use: getStyleLoaders(
                 {
                   importLoaders: 2,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
                   modules: true,
                   getLocalIdent: getCSSModuleLocalIdent,
+                  JavaScriptEnabled: true
                 },
                 'less-loader'
               ),
