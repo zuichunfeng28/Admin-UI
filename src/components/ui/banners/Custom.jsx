@@ -151,7 +151,7 @@ export default class Custom extends React.Component{
                     </Arrow>
                     <Arrow arrowType="next" key="next" prefixCls="user-arrow" component={TweenOne}
                              onMouseEnter={this.nextEnter} onMouseLeave={this.nextLeave} 
-                             animation={{ left: this.state.nextEnter ? 0 : -120 }}>
+                             animation={{ right: this.state.nextEnter ? 0 : -120 }}>
                           <div className="arrow"/>
                           <TweenOneGroup enter={{ opacity: 0, type: 'from'}}
                                          leave={{ opacity: 0 }}
