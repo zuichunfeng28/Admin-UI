@@ -8,7 +8,7 @@ import { receiveData } from './action';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { ThemePicker } from './components/widget';
-import { duration } from 'moment';
+
 
 const { Content, Footer } = Layout; 
 

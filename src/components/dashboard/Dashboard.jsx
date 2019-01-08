@@ -134,7 +134,7 @@ export default class Dashboard extends React.Component {
                                               <img src={headerImg} className="img-responsive img-circle" alt="test"></img>
                                           </span>
                                           <div className="clear">
-                                               <span className="block">段正淳</span>
+                                               <span className="block">段皇爷</span>
                                                <span className="text-muted">阿弥陀佛,幸会,幸会 哈哈~~</span>
                                           </div>
                                      </li>

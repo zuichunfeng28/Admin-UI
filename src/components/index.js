@@ -5,7 +5,17 @@
 import Loadable from 'react-loadable';
 //import Loading from './widget/Loading';
 import Dashboard from './dashboard/Dashboard';
+import Buttons from './ui/Buttons';
+import Banners from './ui/banners';
+import Icons from './ui/Icons';
+import Spins from './ui/Spins';
+import Modals from './ui/Modals';
 
 export default {
-    Dashboard
+    Dashboard,
+    Buttons,
+    Banners,
+    Icons,
+    Spins,
+    Modals
 }
