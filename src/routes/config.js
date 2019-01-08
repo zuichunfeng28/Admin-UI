@@ -17,6 +17,13 @@ export default {
                  { key: '/app/ui/gallery', title: '画廊展示', component: 'Gallery'},
                  { key: '/app/ui/map', title: '地图', component: 'MapUi'},
              ],
+         },
+         {
+             key: '/app/animation', title: '动画', icon: 'rocket',
+             subs: [
+                 { key: '/app/animation/basicAnimations', title: '基础动画', component: 'BasicAnimations'},
+                 { key: '/app/animation/exampleAnimations', title: '示例动画', component: 'ExampleAnimations'},
+             ]
          }
      ],
      others: []  //非菜单相关路由
