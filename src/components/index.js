@@ -3,13 +3,24 @@
  * 路由组件出口文件
  */
 import Loadable from 'react-loadable';
-//import Loading from './widget/Loading';
+import Loading from './widget/Loading';
 import Dashboard from './dashboard/Dashboard';
 import Buttons from './ui/Buttons';
 import Banners from './ui/banners';
 import Icons from './ui/Icons';
 import Spins from './ui/Spins';
 import Modals from './ui/Modals';
+import Notifications from './ui/Notifications';
+import Tabs from './ui/Tabs';
+import Drags from './ui/Draggable';
+import Gallery from './ui/Gallery';
+import MapUi from './ui/map';
+
+
+const WysiwygBundle = Loadable({ //按需加载富文本配置
+       loader: () => import('./ui/Wysiwyg'),
+       loading: Loading,
+});
 
 export default {
     Dashboard,
@@ -17,5 +28,11 @@ export default {
     Banners,
     Icons,
     Spins,
-    Modals
+    Modals,
+    Notifications,
+    Tabs,
+    WysiwygBundle,
+    Drags,
+    Gallery,
+    MapUi
 }

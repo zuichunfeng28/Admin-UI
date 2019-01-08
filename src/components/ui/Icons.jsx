@@ -5,7 +5,7 @@ import React from 'react';
 import { Row, Col, Card, Icon } from 'antd';
 import BreadcrumbCustom from '../BreadcrumbCustom';
 import Emoji from '../emoji';
-import { __metadata } from 'tslib';
+
 
 const emojiList = () => {
     let _elements = [];

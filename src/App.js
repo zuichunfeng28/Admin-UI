@@ -90,7 +90,7 @@ class App extends Component {
                               <Routes auth={auth} onRouterChange={this._setTitle} />
                           </Content>
                           <Footer style={{ textAlign: 'center' }}>
-                          React-Admin ©{new Date().getFullYear()} Created by 865470087@qq.com
+                          React-Admin-UI ©{new Date().getFullYear()} Created by 1214517559@qq.com
                           </Footer>
                       </Layout>
                </Layout>
