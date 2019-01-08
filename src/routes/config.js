@@ -24,7 +24,15 @@ export default {
                  { key: '/app/animation/basicAnimations', title: '基础动画', component: 'BasicAnimations'},
                  { key: '/app/animation/exampleAnimations', title: '示例动画', component: 'ExampleAnimations'},
              ]
-         }
+         },
+         {
+            key: '/app/table', title: '表格', icon: 'copy',
+            subs: [
+                { key: '/app/table/basicTables', title: '基础表格', component: 'BasicTables'},
+                
+            ]
+        },
+
      ],
      others: []  //非菜单相关路由
 };

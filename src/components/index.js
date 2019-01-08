@@ -17,6 +17,7 @@ import Gallery from './ui/Gallery';
 import MapUi from './ui/map';
 import BasicAnimations from './animation/BasicAnimations';
 import ExampleAnimations from './animation/ExampleAnimations';
+import BasicTables from './tables/BasicTables';
 
 
 const WysiwygBundle = Loadable({ //按需加载富文本配置
@@ -38,5 +39,6 @@ export default {
     Gallery,
     MapUi,
     BasicAnimations,
-    ExampleAnimations
+    ExampleAnimations,
+    BasicTables
 }
