@@ -29,7 +29,7 @@ export default {
             key: '/app/table', title: '表格', icon: 'copy',
             subs: [
                 { key: '/app/table/basicTables', title: '基础表格', component: 'BasicTables'},
-                
+                { key: '/app/table/advancedTables', title: '高级表格', component: 'AdvancedTables'}
             ]
         },
 

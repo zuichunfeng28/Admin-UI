@@ -2,10 +2,10 @@
  * @Date 2019-01-08
  */
 
- import themeinfo from './themeinfo';
- import themegrey from './themegrey';
- import themedanger from './themedanger';
- import themewarn from './themewarn';
+ import themeinfo from './themeinfo.json';
+ import themegrey from './themegrey.json';
+ import themedanger from './themedanger.json';
+ import themewarn from './themewarn.json';
 
 
  export default {
