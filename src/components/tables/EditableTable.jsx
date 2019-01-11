@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { Form, InputNumber, Input, Button, Popconfirm, Table } from 'antd';
-import { from } from 'rxjs';
+
 
 
 const data = [];
@@ -85,7 +85,7 @@ export default class EditableTable extends React.Component{
                {
                     title: 'age',
                     dataIndex: 'age',
-                    width: '15%',
+                    width: '10%',
                     editable: true,
                },
                {

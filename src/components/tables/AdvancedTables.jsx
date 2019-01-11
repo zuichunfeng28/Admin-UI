@@ -11,7 +11,7 @@ import { Row, Col, Card } from 'antd';
 
 
  export default class AdvancedTables extends React.Component{
-    render() {
+     render() {
         return (
             <div className="gutter-example">
                 <BreadcrumbCustom first="表格" second="高级表格" />
