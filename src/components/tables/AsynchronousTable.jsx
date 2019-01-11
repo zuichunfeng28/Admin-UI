@@ -5,6 +5,7 @@
  import React from 'react';
  import { getBbcNews } from '@/axios';
  import BreadcrumbCustom from '../BreadcrumbCustom';
+import { Row, Col, Card, Button, Table } from 'antd';
 
  const columns = [
      {
@@ -62,6 +63,30 @@
            const { loading, selectedRowKeys } = this.state;
            const rowSelection = {
                selectedRowKeys,
+               onChange: this.onSelectedChange,
            };
+
+           const hasSelected = selectedRowKeys.length > 0;
+
+           return (
+               <div className="gutter-example">
+                      <BreadcrumbCustom first="表格" second = "异步表格"/>
+                      <Row gutter={16}>
+                            <Col className="gutter-row" md={24}>
+                                  <div className="gutter-box">
+                                       <Card title="异步表格--BBC新闻今日热门" bordered={false}>
+                                            <div style={{ marginBottom: 16}}>
+                                                  <Button type="primary" onClick={this.start} loading={loading} disabled={loading}>
+                                                      Reload
+                                                  </Button>
+                                                  <span style={{ marginLeft: 8}}>{hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}</span>
+                                            </div>
+                                            <Table rowSelection={rowSelection} columns={columns} dataSource={this.state.data}/>
+                                       </Card>
+                                  </div>
+                            </Col>
+                      </Row>
+                </div>
+           );
        }
  }

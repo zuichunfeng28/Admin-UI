@@ -19,6 +19,7 @@ import BasicAnimations from './animation/BasicAnimations';
 import ExampleAnimations from './animation/ExampleAnimations';
 import BasicTables from './tables/BasicTables';
 import AdvancedTables from './tables/AdvancedTables';
+import AsynchronousTable from './tables/AsynchronousTable';
 
 
 const WysiwygBundle = Loadable({ //按需加载富文本配置
@@ -42,5 +43,6 @@ export default {
     BasicAnimations,
     ExampleAnimations,
     BasicTables,
-    AdvancedTables
+    AdvancedTables,
+    AsynchronousTable
 }
