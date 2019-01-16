@@ -33,7 +33,15 @@ export default {
                 { key: '/app/table/asynchronousTable', title: '异步表格', component: 'AsynchronousTable'}
             ]
         },
+        {
+            key: '/app/forms', title: '表单', icon: 'edit',
+            subs: [
+                { key: '/app/forms/basicForm', title: '基础表单', component: 'BasicForm'},
+       
+            ]
+        },
 
+        
      ],
      others: []  //非菜单相关路由
 };
