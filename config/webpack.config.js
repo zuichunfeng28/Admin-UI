@@ -41,6 +41,7 @@ const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 const lessRegex = /\.less$/;
 const lessModuleRegex = /\.module\.less$/;
+const fontRegex = /\.(woff|eot|tff|svg)\??.*$/;
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
@@ -456,7 +457,6 @@ module.exports = function(webpackEnv) {
                 'sass-loader'
               ),
             },
-
 
             // Opt-in support for LESS (using .less  extensions).
             {
