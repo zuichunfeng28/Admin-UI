@@ -33,6 +33,13 @@ export default {
                 { key: '/app/table/asynchronousTable', title: '异步表格', component: 'AsynchronousTable'}
             ]
         },
+        {
+            key: '/app/chart', title: '图表', icon: 'area-chart',
+            subs: [
+                { key: '/app/chart/echarts', title: 'echarts', component: 'Echarts'},
+                
+            ]
+        },
 
      ],
      others: []  //非菜单相关路由
