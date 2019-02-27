@@ -98,7 +98,7 @@ export default class Gallery extends React.Component{
                  <div className="gutter-box" key={v2}>
                       <Card bordered={false} bodyStyle={{ padding: 0 }}>
                             <div>
-                                 <img onClick={() => this.openGallery(v2)} alt="example" width="100%" src={v2}/>
+                                 <img onClick={() => this.openGallery(v2)} alt="example" width="100%" src={v2} />
                             </div>
                             <div className="pa-m">
                                  <h3>React-Admin-UI</h3>
@@ -111,7 +111,7 @@ export default class Gallery extends React.Component{
 
         return (
             <div className="gutter-example button-demo">
-                 <BreadcrumbCustom first="UI" second="画廊展示(图片来自花瓣网，仅学习，若侵权请联系删除)"/>
+                 <BreadcrumbCustom first="UI" second="画廊展示(图片来自花瓣网，仅学习，若侵权请联系删除)" />
                  <Row gutter={10}>
                       <Col className="gutter-row" md={5}>
                            {imgsTag[0]}
@@ -134,24 +134,24 @@ export default class Gallery extends React.Component{
                  
                        <div className="pswp__scroll-wrap">
                             <div className="pswp__container">
-                                 <div className="pswp__item"/>
-                                 <div className="pswp__item"/>
-                                 <div className="pswp__item"/>
+                                 <div className="pswp__item" />
+                                 <div className="pswp__item" />
+                                 <div className="pswp__item" />
                             </div>
 
                             <div className="pswp__ui pswp__ui--hidden">
                                   <div className="pswp__top-bar">
-                                        <div className="pswp__counter"/>
+                                        <div className="pswp__counter" />
 
-                                        <button className="pswp__button pswp__button--close" title="Close (Esc)"/>
-                                        <button className="pswp__button pswp__button--share" title="Share"/>
-                                        <button className="pswp__button pswp__button--fs" title="Toggle fullscreen"/>
-                                        <button className="pswp__button pswp__button--zoom" title="Zoom in/out"/>
+                                        <button className="pswp__button pswp__button--close" title="Close (Esc)" />
+                                        <button className="pswp__button pswp__button--share" title="Share" />
+                                        <button className="pswp__button pswp__button--fs" title="Toggle fullscreen" />
+                                        <button className="pswp__button pswp__button--zoom" title="Zoom in/out" />
 
                                         <div className="pswp__preloader">
                                               <div className="pswp__preloader__icn">
                                                     <div className="pswp__preloader__cut">
-                                                         <div className="pswp__preloader__donut"/>
+                                                         <div className="pswp__preloader__donut" />
                                                     </div>
                                               </div>
                                         </div>

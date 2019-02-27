@@ -20,11 +20,8 @@ import ExampleAnimations from './animation/ExampleAnimations';
 import BasicTables from './tables/BasicTables';
 import AdvancedTables from './tables/AdvancedTables';
 import AsynchronousTable from './tables/AsynchronousTable';
-<<<<<<< HEAD
 import Echarts from './charts/Echarts';
-=======
 import BasicForm from './forms/BasicForm';
->>>>>>> d6b5dba394e207bce758f5ad8479eb23e2264d70
 
 
 const WysiwygBundle = Loadable({ //按需加载富文本配置
