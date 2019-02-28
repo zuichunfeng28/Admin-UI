@@ -37,6 +37,7 @@ export default {
             key: '/app/chart', title: '图表', icon: 'area-chart',
             subs: [
                 { key: '/app/chart/echarts', title: 'echarts', component: 'Echarts'},
+                { key: '/app/chart/recharts', title: 'recharts', component: 'Recharts'}
                 
             ]
         },

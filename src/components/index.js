@@ -22,6 +22,7 @@ import AdvancedTables from './tables/AdvancedTables';
 import AsynchronousTable from './tables/AsynchronousTable';
 import Echarts from './charts/Echarts';
 import BasicForm from './forms/BasicForm';
+import Recharts from './charts/Recharts';
 
 
 const WysiwygBundle = Loadable({ //按需加载富文本配置
@@ -48,6 +49,7 @@ export default {
     AdvancedTables,
     AsynchronousTable,
     Echarts,
-    BasicForm
+    BasicForm,
+    Recharts
 
 }
